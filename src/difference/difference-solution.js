@@ -17,17 +17,13 @@
  * difference([1, 2, 1], [2, 3]); //  [1]
  */
 
-export const differenceSolution = (array1,array2) => {
-    let arr=[]
-    for(let i=0;i<array1.length;i++){
-        let data=array1[i]
-        if(!array2.includes(data)){
-            arr.push(data)
-
-        }
+export const differenceSolution = (array1, array2) => {
+  let arr = [];
+  for (let i = 0; i < array1.length; i++) {
+    let data = array1[i];
+    if (!array2.includes(data)) {
+      arr.push(data);
     }
-    return arr
-}
-
-
-
+  }
+  return arr;
+};
