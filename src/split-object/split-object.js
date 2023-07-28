@@ -22,16 +22,16 @@
  * // -> []
  */
 
- export function SplitObject(param){
- let data1=Object.keys(param)
- let data2=Object.values(param)
- let arr=[]
- for(let i=0;i<data1.length;i++){
-    let key=data1[i]
-    let Value=data2[i]
-    let data ={}
-    data[key]=Value
-    arr.push(data)
- }
- return arr
+export function SplitObject(param) {
+  let data1 = Object.keys(param);
+  let data2 = Object.values(param);
+  let arr = [];
+  for (let i = 0; i < data1.length; i++) {
+    let key = data1[i];
+    let Value = data2[i];
+    let data = {};
+    data[key] = Value;
+    arr.push(data);
+  }
+  return arr;
 }
