@@ -1,3 +1,4 @@
+/* eslint-disable prefer-arrow/prefer-arrow-functions */
 /**
  * Converts a nested array into a single array with no nesting.
  *
@@ -15,16 +16,15 @@
  * deepFlat(['a', ['b', [['c'], ['d']], 'e']]);
  * // -> ['a', 'b', 'c', 'd', 'e']
  */
-
-export function deepFlat(array = []) {
-  let result = [];
-  for (let element of array) {
+export const deepFlat = (array = []) => {
+  const result = [];
+  for (const element of array) {
     if (Array.isArray(element)) {
-      let eleHolder = deepFlat(element);
+      const eleHolder = deepFlat(element);
       result.push(...eleHolder);
     } else {
       result.push(element);
     }
   }
   return result;
-}
+};
