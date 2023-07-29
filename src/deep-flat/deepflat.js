@@ -16,7 +16,7 @@
  * // -> ['a', 'b', 'c', 'd', 'e']
  */
 
-export function deepFlat(array = []){
+export function deepFlat(array = []) {
   let result = [];
   for (let element of array) {
     if (Array.isArray(element)) {
