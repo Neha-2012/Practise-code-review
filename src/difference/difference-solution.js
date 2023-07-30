@@ -19,9 +19,9 @@
  */
 
 export const differenceSolution = (array1, array2) => {
-  let arr = [];
+  const arr = [];
   for (let i = 0; i < array1.length; i++) {
-    let data = array1[i];
+    const data = array1[i];
     if (!array2.includes(data)) {
       arr.push(data);
     }
