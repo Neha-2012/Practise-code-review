@@ -2,7 +2,7 @@
  * Splits an object into multiple objects with one key/value pair each.
  * The new objects are returned in an array.
  *
- * This function has no side-effects, the argument object is not modified
+ * This function has no side-effects, the argument object is not modified.
  *
  * @param {Object} [toSeparate={}] - The object to split into key/value pairs.
  * @returns {Array} Returns a new array with one entry for each key/value pair.
@@ -23,13 +23,13 @@
  */
 
 export function SplitObject(param) {
-  let data1 = Object.keys(param);
-  let data2 = Object.values(param);
-  let arr = [];
+  const data1 = Object.keys(param);
+  const data2 = Object.values(param);
+  const arr = [];
   for (let i = 0; i < data1.length; i++) {
-    let key = data1[i];
-    let Value = data2[i];
-    let data = {};
+    const key = data1[i];
+    const Value = data2[i];
+    const data = {};
     data[key] = Value;
     arr.push(data);
   }
