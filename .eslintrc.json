@@ -1,5 +1,5 @@
 {
-  "plugins": ["jsdoc", "prefer-arrow","sonarjs"],
+  "plugins": ["jsdoc", "prefer-arrow", "sonarjs"],
   "parserOptions": {
     "sourceType": "module"
   },
@@ -78,7 +78,6 @@
     ],
     "camelcase": [2, { "properties": "never" }],
 
-
     "prefer-arrow/prefer-arrow-functions": ["warn"],
 
     "sonarjs/prefer-immediate-return": 0,
@@ -92,7 +91,6 @@
     "jsdoc/check-types": 1,
     "jsdoc/check-values": 1,
     "jsdoc/empty-tags": 1,
-    "jsdoc/newline-after-description": 1,
     "jsdoc/no-bad-blocks": 1,
     "jsdoc/no-undefined-types": 1,
     "jsdoc/require-description": 1,
